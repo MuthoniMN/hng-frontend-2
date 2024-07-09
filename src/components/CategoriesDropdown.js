@@ -1,6 +1,6 @@
 const CategoriesDropdown = () => {
     return (
-        <details>
+        <details className="hidden md:block">
             <summary>Categories</summary>
         </details>
     )
