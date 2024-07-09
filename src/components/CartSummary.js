@@ -5,7 +5,7 @@ import {useRouter} from "next/navigation"
 const CartSummary = () => {
   const router = useRouter()
   return (
-    <div className="flex flex-col gap-4 py-4 px-2 w-full md:w-3/4 rounded bg-white">
+    <div className="flex flex-colgap-4 py-4 px-2 w-full md:w-3/4 lg:w-3/5 rounded bg-white">
     <div className="flex justify-between">
     <h4 className="text-xl">Summary</h4>
       <p>2 × 1</p>
