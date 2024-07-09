@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 const NavBar = () => {
     const router = useRouter();
     return (
-        <nav className="flex justify-around items-center">
+        <nav className="flex justify-around items-center box-shadow-bottom-md">
             <Image src={'/imgs/logo.png'} alt="Furhome E-commerce Store" width={150} height={75} />
             <SearchBar />
             <CategoriesDropdown />

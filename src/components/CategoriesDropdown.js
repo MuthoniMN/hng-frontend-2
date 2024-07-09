@@ -1,8 +1,10 @@
+import { FaCaretDown } from "react-icons/fa6";
 const CategoriesDropdown = () => {
     return (
-        <details className="hidden md:block">
-            <summary>Categories</summary>
-        </details>
+        <div className="hidden md:flex gap-4">
+            <h3 className="text-xl">Categories</h3>
+            <FaCaretDown className="text-xl" />
+        </div>
     )
 }
 
