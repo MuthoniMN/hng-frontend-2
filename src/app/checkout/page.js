@@ -1,8 +1,8 @@
-import PageHeader from "../components/PageHeader";
-import CheckoutItems from "../components/CheckoutItems";
-import Terms from "../components/Terms";
-import PaymentOptions from "../components/PaymentOptions";
-import CheckoutForm from "../components/CheckoutForm";
+import PageHeader from "../../components/PageHeader";
+import CheckoutItems from "../../components/CheckoutItems";
+import Terms from "../../components/Terms";
+import PaymentOptions from "../../components/PaymentOptions";
+import CheckoutForm from "../../components/CheckoutForm";
 const Checkout = () => {
   return (
     <main>
