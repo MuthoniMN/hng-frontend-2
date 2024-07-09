@@ -8,8 +8,11 @@ const Checkout = () => {
     <main>
      <PageHeader check={false} title="Checkout Items" />
       <CheckoutItems />
-      <section className="flex flex-col md:flex-row justify-between py-6">
-        <CheckoutForm />
+      <section className="flex flex-col md:flex-row justify-between p-6">
+        <section className="space-y-4">
+        <h2 className="text-2xl">Enter Card Information</h2>
+          <CheckoutForm />
+        </section>
       <PaymentOptions />
       </section>
       <Terms />

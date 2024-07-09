@@ -9,7 +9,7 @@ const Cart = () => {
     <main>
      <PageHeader check={true} title="Shopping Cart" />
       <CartItems />
-      <section className="flex flex-col md:flex-row justify-between py-6">
+      <section className="flex flex-col md:flex-row justify-between p-6">
         <CartSummary />
       <PaymentOptions />
       </section>

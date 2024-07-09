@@ -1,4 +1,9 @@
+"use client"
+  
+import {useRouter} from "next/navigation"
+
 const CartSummary = () => {
+  const router = useRouter()
   return (
     <div className="flex flex-col gap-4 py-4 px-2 w-full md:w-3/4 bg-white">
     <div className="flex justify-between">
@@ -21,6 +26,8 @@ const CartSummary = () => {
     <p className="text-xl">Total</p>
         <p>$2450</p>
       </div>
-      <button className="bg-emerald-500 text-white px-2 py-2 rounded-md">Checkout</button>
+      <button className="bg-emerald-500 text-white px-2 py-2 rounded-md" onClick={() => router.push('/checkout')}>Checkout</button>
     </div>)
 }
+
+export default CartSummary;

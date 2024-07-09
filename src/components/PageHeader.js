@@ -1,7 +1,7 @@
 const PageHeader = ({ check, title }) => {
   return (
-    <header className="bg-white py-4 px-8 w-full text-2xl">
-      <h1>{ title }</h1>
+    <header className="bg-white py-4 px-8 w-full space-y-4">
+      <h1 className="text-2xl">{ title }</h1>
       { check && <div className="flex gap-4">
       <div className="flex gap-2">
        <input type="radio" value="yes" id="select" className="focus:outline-emerald_500 border-emerald-500" />
