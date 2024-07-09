@@ -64,4 +64,21 @@ const products = [
     }
 ]
 
+export const cartItems = [
+      {
+        title: "Blazer Sofa",
+        description: "A comfy emerald green 2-seater sofa",
+        price: "$1200",
+        discount: "30%",
+        picture: "/imgs/blazer-sofa.png"
+    },
+        {
+        title: "Date Table",
+        description: "A white table",
+        price: "$800",
+        discount: "20%",
+        picture: "/imgs/date-table.png"
+    }
+]
+
 export default products;
