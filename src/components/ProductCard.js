@@ -12,7 +12,7 @@ const ProductCard = ( { product } ) => {
             <p className="text-2xl">{product.price}</p>
             <div className=" flex justify-between">
                 <p className="bg-gray-100 px-2 rounded">{product.discount} off</p>
-                <p className="flex gap-6">
+                <p className="flex gap-2 md:gap-6">
                     <FaRegHeart />
                     <FiShoppingCart />
                 </p>
