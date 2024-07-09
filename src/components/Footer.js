@@ -4,13 +4,13 @@ const Footer = () => {
     return (
         <footer className="space-y-8 p-12 h-1/3 text-white">
             <Image src={"/imgs/light-logo.png"} alt="Furhome E-commerce Website" width={150} height={50}  />
-            <section className="flex justify-between flex-wrap md:flex-nowrap">
-                <div className="w-1/4 space-y-2">
+            <section className="flex justify-between flex-col md:flex-row gap-6 md:gap-0">
+                <div className="w-full md:w-1/4 space-y-2">
                     <p>About Us</p>
                     <p>Blog</p>
                     <p>FAQ</p>
                 </div>
-                <div className="w-1/4 space-y-2">
+                <div className="w-full md:w-1/4 space-y-2">
                     <p>Home</p>
                     <p>Search products</p>
                     <p>Categories</p>
