@@ -3,7 +3,7 @@ import Image from 'next/image'
 import {FaEdit} from "react-icons/fa"
 const ItemBlock = ({ item, cart}) => {
   return (
-    <div className="flex justify-around p-4 max-w-[640px]">
+    <div className="flex justify-around">
       <FaCircleCheck className="text-emerald-500 text-xl" />
       <Image src={item.picture} alt={item.name} width={250} height 
         ={250} className="w-2/5" />
