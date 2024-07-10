@@ -20,7 +20,7 @@ const Footer = () => {
                     <p>Categories</p>
                     <p>Wish List</p>
                     <p>
-                        <Link href="/cart" className="hover:font-bold hover:underline">Cart<</Link></p>
+                        <Link href="/cart" className="hover:font-bold hover:underline">Cart</Link></p>
                 </div>
                 <div className="min-w-1/4 space-y-2">
                     <h3 className="text-xl">Contact Us</h3>
