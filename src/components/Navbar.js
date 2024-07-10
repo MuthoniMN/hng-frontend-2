@@ -25,8 +25,8 @@ const NavBar = () => {
             <FaBars className="text-3xl block md:hidden" onClick={() => setOpen((val) => !val)}  />
 
                 {
-                    open && <div className="absolute top-[110px] right-0 w-1/2">
-                        <Link href="/cart">Go to Cart</Link>
+                    open && <div className="absolute top-[75px] right-0 bg-gray-100 py-6 px-2 w-1/2">
+                        <Link href="/cart" className="text-xl hover:underline hover:font-bold">Go to Cart</Link>
                     </div>
             
                 }
