@@ -6,10 +6,10 @@ import CartSummary from "../../components/CartSummary";
 
 const Cart = () => {
   return (
-    <main>
+    <main className="space-y-6">
      <PageHeader check={true} title="Shopping Cart" />
       <CartItems />
-      <section className="flex flex-col md:flex-row justify-between p-6">
+      <section className="flex flex-col md:flex-row justify-between">
         <CartSummary />
       <PaymentOptions />
       </section>
