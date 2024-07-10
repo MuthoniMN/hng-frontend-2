@@ -9,7 +9,7 @@ const Cart = () => {
     <main className="space-y-6">
      <PageHeader check={true} title="Shopping Cart" />
       <CartItems />
-      <section className="flex flex-col md:flex-row justify-between gap-6">
+      <section className="flex flex-col md:flex-row justify-between items-start gap-6">
         <CartSummary />
       <PaymentOptions />
       </section>
