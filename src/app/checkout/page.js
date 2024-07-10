@@ -8,8 +8,8 @@ const Checkout = () => {
     <main className="space-y-6">
      <PageHeader check={false} title="Checkout Items" />
       <CheckoutItems />
-      <section className="flex flex-col md:flex-row justify-between items-start w-full md:w-3/4 lg:w-3/5 gap-6">
-        <section className="space-y-4 bg-gray-100 py-4">
+      <section className="flex flex-col md:flex-row justify-between items-start w-full  gap-6">
+        <section className="space-y-4 bg-gray-100 w-full md:w-3/4 lg:w-3/5 py-4">
         <h2 className="text-2xl">Enter Card Information</h2>
           <CheckoutForm />
         </section>
