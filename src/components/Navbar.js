@@ -1,5 +1,7 @@
 "use client"
 import Image from "next/image";
+import Link from "next/link";
+import {useState} from "react"
 import SearchBar from "./SearchBar";
 import CategoriesDropdown from "./CategoriesDropdown";
 import { FaRegHeart} from "react-icons/fa"
@@ -7,6 +9,7 @@ import { FaCartShopping, FaBars } from "react-icons/fa6";
 import { useRouter } from "next/navigation";
 const NavBar = () => {
     const router = useRouter();
+    const [open, setOpen] = useState(false)
     return (
         <nav className="flex justify-around items-center box-shadow-bottom-md">
             <Image src={'/imgs/logo.png'} alt="Furhome E-commerce Store" width={150} height={75} />
@@ -19,7 +22,14 @@ const NavBar = () => {
             <div className="w-[56px] h-[56px]">
                         <Image src={'/imgs/user-profile.png'} alt="Furhome E-commerce Store" width={56} height={56} className="w-[100%] rounded-full" />
                         </div>
-            <FaBars className="text-3xl block md:hidden"  />
+            <FaBars className="text-3xl block md:hidden" onClick={() => setOpen((val) => !val)}  />
+
+                {
+                    open && <div className="absolute top-[110px] right-0 w-1/2">
+                        <Link href="/cart">Go to Cart</Link>
+                    </div>
+            
+                }
         </nav>
     )
 }
