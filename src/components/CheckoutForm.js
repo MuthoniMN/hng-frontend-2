@@ -1,6 +1,6 @@
 const CheckoutForm = () => {
   return (
-    <form className="flex flex-col gap-4 px-4 py-2 w-full md:w-3/4 lg:w-3/5 rounded">
+    <form className="flex flex-col gap-4 px-4 py-2 w-full rounded">
     <div className="flex flex-col gap-2">
     <label htmlFor="cardNumber">Card Number </label>
       <input type="text" id="cardNumber" className="bg-white w-full rounded-md px-4 py-2" />
