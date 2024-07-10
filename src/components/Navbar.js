@@ -12,7 +12,9 @@ const NavBar = () => {
     const [open, setOpen] = useState(false)
     return (
         <nav className="flex justify-around items-center box-shadow-bottom-md">
+            <Link href="/">
             <Image src={'/imgs/logo.png'} alt="Furhome E-commerce Store" width={150} height={75} />
+            </Link>
             <SearchBar />
             <CategoriesDropdown />
             <p className="hidden md:flex gap-6 text-xl">

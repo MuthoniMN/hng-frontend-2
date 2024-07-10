@@ -1,9 +1,12 @@
 import Image from "next/image";
+import Link from "next/link"
 
 const Footer = () => {
     return (
         <footer className="space-y-8 p-12 h-1/3 text-white">
+            <Link href="/">
             <Image src={"/imgs/light-logo.png"} alt="Furhome E-commerce Website" width={150} height={50}  />
+            </Link >
             <section className="flex justify-between flex-col md:flex-row gap-6 md:gap-0">
                 <div className="w-full md:w-1/4 space-y-2">
                     <p>About Us</p>
@@ -11,11 +14,13 @@ const Footer = () => {
                     <p>FAQ</p>
                 </div>
                 <div className="w-full md:w-1/4 space-y-2">
-                    <p>Home</p>
+                    <p>
+                        <Link href="/" className="hover:font-bold hover:underline">Home</Link></p>
                     <p>Search products</p>
                     <p>Categories</p>
                     <p>Wish List</p>
-                    <p>Cart</p>
+                    <p>
+                        <Link href="/cart" className="hover:font-bold hover:underline">Cart<</Link></p>
                 </div>
                 <div className="min-w-1/4 space-y-2">
                     <h3 className="text-xl">Contact Us</h3>
